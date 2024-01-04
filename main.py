@@ -1,13 +1,10 @@
 from fastapi import FastAPI
 
+from routes.card import router as card_router
+from routes.transaction import router as transaction_router
+from routes.user import router as user_router
+
 app = FastAPI()
-
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, query_param: str = None):
-    return {"item_id": item_id, "query_param": query_param}
+app.include_router(user_router)
+app.include_router(card_router)
+app.include_router(transaction_router)
