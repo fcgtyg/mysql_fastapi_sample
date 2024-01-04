@@ -1,6 +1,6 @@
-# Program with FastAPI and MySQL
+# Sample Program with FastAPI and MySQL
 
-This project is a program developed using FastAPI and MySQL. It can be easily started with Docker Compose.
+This project is a sample program developed using FastAPI and MySQL. It can be easily started with Docker Compose.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ This project is a program developed using FastAPI and MySQL. It can be easily st
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/fcgtyg/mysql_fastapi_sample.git
     cd your-repo
     ```
 
